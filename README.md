@@ -6,13 +6,13 @@ $(document).on('click', 'a.no-ajax', function (e) {
             e.preventDefault();
 });
 ```
-```
+``` javascript
 excludePjaxArrayElem = ['class1','class2','class3'];
 ```
-```
+``` javascript
 $(document).off('click', 'a:not(.no-ajax)');
 ```
-```
+``` javascript
 $(document).on('click', 'a:not(.no-ajax)', function (e) {
             if (e.isDefaultPrevented()) {
                 console.log('Событие уже обрабатывается другим обработчиком');

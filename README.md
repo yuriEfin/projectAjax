@@ -1,17 +1,19 @@
 # projectAjax
 ajax jquery wrapper
 
-<code>
+``` javascript
 $(document).on('click', 'a.no-ajax', function (e) {
             e.preventDefault();
-
 });
+```
+```
 excludePjaxArrayElem = ['class1','class2','class3'];
-        /**
-         * Обработчик ссылок - Ajax query
-         */
-        $(document).off('click', 'a:not(.no-ajax)');
-        $(document).on('click', 'a:not(.no-ajax)', function (e) {
+```
+```
+$(document).off('click', 'a:not(.no-ajax)');
+```
+```
+$(document).on('click', 'a:not(.no-ajax)', function (e) {
             if (e.isDefaultPrevented()) {
                 console.log('Событие уже обрабатывается другим обработчиком');
                 return;
@@ -58,5 +60,5 @@ excludePjaxArrayElem = ['class1','class2','class3'];
                 }
             }
             return false;
-        });
-        </code>
+});
+```
